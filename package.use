@@ -1,0 +1,14 @@
+media-video/mplayer theora
+sys-auth/consolekit systemd-units
+app-text/texlive xetex graphics linguas_ja
+dev-python/ipython matplotlib notebook
+app-i18n/ibus vala
+=virtual/udev-208-r2 gudev
+>=dev-python/numpy-1.8.1 lapack
+virtual/udev gudev
+>=x11-base/xorg-server-1.15.1 xvfb
+>=x11-apps/mesa-progs-8.2.0 gles1 gles2
+x11-drivers/xf86-video-intel uxa
+dev-lang/python sqlite
+www-client/firefox custom-cflags
+app-arch/p7zip rar
