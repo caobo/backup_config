@@ -17,5 +17,5 @@
 /dev/sda2		/boot		vfat		defaults,noatime   0 2
 /dev/sda7		/		btrfs	        defaults,noatime   0 1
 /dev/sda8               /home           btrfs           defaults,noatime   0 2
-/dev/sda6		none		swap		defaults           0 0
+/dev/sda6		none		swap		defaults           0 2
 /dev/cdrom		/mnt/cdrom	auto		noauto,ro	   0 0
