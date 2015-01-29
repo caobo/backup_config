@@ -12,6 +12,7 @@ filetype off                  " required
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+"----------------------------------
 
 "-----Plugins Settings-------------
 Plugin 'gmarik/Vundle.vim'
@@ -22,14 +23,18 @@ let g:tex_nine_config = {
     \'synctex': 1
 \}
 
+Plugin 'ervandew/supertab'
+
+"----------------------------------
 call vundle#end()            " required
 filetype plugin indent on    " required
-"=================================
+
+"==================================
 "        key Settings             |
 "==================================
 let mapleader = ";"
 nnoremap nw <C-W>v
-nnoremap nt :tabe<cr>
+nnoremap nt :tabnew<cr>
 
 "==================================
 "        Functions                |
