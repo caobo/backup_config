@@ -1,0 +1,44 @@
+#====================================
+#         Basic Settings            |         
+#====================================
+background yes
+use_xft yes
+xftfont 123:size=30
+xftalpha 1
+update_interval 1
+total_run_times 0
+own_window yes
+own_window_type conky
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_argb_visual yes
+own_window_argb_value 0
+double_buffer yes
+minimum_size 200 100
+maximum_width 1000
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+default_color white
+default_shade_color red
+default_outline_color green
+alignment top_right
+gap_x 150
+gap_y 150
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+net_avg_samples 1
+override_utf8_locale yes
+use_spacer right
+color1 555555
+
+#====================================
+#         Function Settings          |         
+#====================================
+TEXT
+${voffset -20}${color 555555}${font Monaco:pixelsize=150}${time %H:%M}${font}${voffset -80}${offset 50}${color 9A2EFE}${font Monaco:pixelsize=55}${time %d} ${voffset -15}${color 555555}${font Monaca:pixelsize=35}${time  %B} ${time %Y}${font}${voffset 45}${font Monaco:pixelsize=65}${offset -150}${time %A}${font}
+${voffset -20}${offset 12}${font Monaco:pixelsize=32}${color 9A2EFE}ROOT ${offset 9}$color1${fs_free /} / ${fs_size /}${voffset 40}${offset -425}${color 9A2EFE}HOME $color1${fs_free /home} / ${fs_size /home}${voffset -35}${offset 80}${color 9A2EFE}RAM ${offset 9}$color1$mem/ $memmax
+${offset 13}${voffset 38}${color 9A2EFE}CPU ${offset 9}$color1${cpu cpu0}% ${offset 9}$color1${cpu cpu1}% ${offset 9}$color1${cpu cpu2}% ${offset 9}$color1${cpu cpu3}% ${offset 9}$color1${cpu cpu4}% ${offset 9}$color1${cpu cpu5}% ${offset 9}$color1${cpu cpu6}% ${offset 9}$color1${cpu cpu7}%
+#${font Open Sans Light :size=20}${if_match ${exec wmctrl -d | awk '{print $6}' | sed 's/,0//'} == 0}${color1}${endif}•${color FFFFFF}${offset 10}${if_match ${exec wmctrl -d | awk '{print $6}' | sed 's/,0//'} == 2880}${color1}${endif}•${color FFFFFF}${offset 10}${if_match ${exec wmctrl -d | awk '{print $6}' | sed 's/,0//'} == 5760}${color1}${endif}•${color FFFFFF}${offset 10}${if_match ${exec wmctrl -d | awk '{print $6}' | sed 's/,0//'} == 8640}${color1}${endif}•${color FFFFFF}${if_match ${exec wmctrl -d | awk '{print $6}' | sed 's/,0//'} == 11520}${color1}${endif}•${color FFFFFF}
