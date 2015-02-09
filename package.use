@@ -1,14 +1,16 @@
+sys-kernel/gentoo-sources experimental
 media-video/mplayer theora
+app-editors/vim python lua luajit perl
 sys-auth/consolekit systemd-units
 app-text/texlive xetex graphics linguas_ja
 dev-python/ipython matplotlib notebook
-app-i18n/ibus vala
-=virtual/udev-208-r2 gudev
->=dev-python/numpy-1.8.1 lapack
-virtual/udev gudev
 >=x11-base/xorg-server-1.15.1 xvfb
 >=x11-apps/mesa-progs-8.2.0 gles1 gles2
 x11-drivers/xf86-video-intel uxa
 dev-lang/python sqlite
 www-client/firefox custom-cflags
-app-arch/p7zip rar
+=dev-db/mariadb-10.0* extraengine
+net-libs/webkit-gtk -gles2
+>=media-libs/gd-2.0.34 fontconfig
+gnome-base/gvfs samba
+>=media-libs/gst-plugins-bad-1.4.5 egl -gles2
