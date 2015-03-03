@@ -1,33 +1,25 @@
 "==================================
 "        Plug-ins Settings        |
 "==================================
-"filetype on
-"filetype plugin on
-"filetype indent on
+filetype on
+filetype plugin on
+filetype indent on
+set nocompatible
 
-"-----Vundle Settings--------------
-set nocompatible              " be iMproved, required
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+"-----Vim-plug Settings--------------
+call plug#begin('~/.vim/plugged')
 "----------------------------------
 
 "-----Plugins Settings-------------
-Plugin 'gmarik/Vundle.vim'
-
-Plugin 'vim-scripts/TeX-9'
+Plug 'vim-scripts/TeX-9'
 let g:tex_nine_config = {
-    \'compiler': 'xelatex',
-    \'synctex': 1
+    \'compiler': 'pdflatex',
+    \'viewer': {'app':'open', 'target':'pdf'},
 \}
 
-Plugin 'ervandew/supertab'
-
+Plug 'ervandew/supertab'
 "----------------------------------
-call vundle#end()            " required
-filetype plugin indent on    " required
+call plug#end()
 
 "==================================
 "        key Settings             |
