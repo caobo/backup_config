@@ -20,6 +20,9 @@ let g:tex_nine_config = {
 Plug 'ervandew/supertab'
 
 Plug 'Raimondi/delimitMate'
+
+Plug 'bling/vim-airline'
+
 "----------------------------------
 call plug#end()
 
@@ -29,6 +32,7 @@ call plug#end()
 let mapleader = ";"
 nnoremap nw <C-W>v
 nnoremap nt :tabnew<cr>
+imap jk <esc>
 
 "==================================
 "        Functions                |
