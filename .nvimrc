@@ -1,10 +1,10 @@
 "==================================
 "        Plug-ins Settings        |
 "==================================
+set nocompatible
 filetype on
 filetype plugin on
 filetype indent on
-set nocompatible
 
 "-----Vim-plug Settings--------------
 call plug#begin('~/.nvim/plugged')
@@ -13,15 +13,20 @@ call plug#begin('~/.nvim/plugged')
 "-----Plugins Settings-------------
 Plug 'vim-scripts/TeX-9'
 let g:tex_nine_config = {
-    \'compiler': 'pdflatex',
-    \'viewer': {'app':'open', 'target':'pdf'},
-\}
+			\'compiler': 'pdflatex',
+			\'viewer': {'app':'open', 'target':'pdf'},
+			\}
 
 Plug 'ervandew/supertab'
 
 Plug 'Raimondi/delimitMate'
 
 Plug 'bling/vim-airline'
+let g:airline_theme='kalisi'
+
+Plug 'itchyny/calendar.vim'
+let g:calendar_google_calendar = 1
+let g:calendar_google_task = 1
 
 "----------------------------------
 call plug#end()
@@ -32,6 +37,10 @@ call plug#end()
 let mapleader = ";"
 nnoremap nw <C-W>v
 nnoremap nt :tabnew<cr>
+nnoremap <C-j> <C-w>j
+nnoremap <C-h> <C-w>h
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 imap jk <esc>
 
 "==================================
@@ -79,3 +88,9 @@ set guioptions-=R
 set guioptions-=m
 set guioptions-=T
 set cursorline
+colorscheme kalisi
+"let g:solarized_termcolors=256
+"let g:solarized_termtrans = 1
+"let g:solarized_degrade = 1
+"colorscheme solarized
+set background=dark
