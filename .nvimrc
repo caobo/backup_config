@@ -28,6 +28,11 @@ Plug 'itchyny/calendar.vim'
 let g:calendar_google_calendar = 1
 let g:calendar_google_task = 1
 
+Plug 'xolox/vim-notes'
+let g:notes_directories = ['~/Documents/Notes','~/Documents/Notes/Experiments']
+
+Plug 'xolox/vim-misc'
+
 "----------------------------------
 call plug#end()
 
@@ -55,13 +60,13 @@ set incsearch
 set wildmenu
 set wildmode=longest:list,full
 " 将制表符扩展为空格
-"set expandtab
+set expandtab
 " 设置编辑时制表符占用空格数
-"set tabstop=4
+set tabstop=4
 " 设置格式化时制表符占用空格数
-"set shiftwidth=4
+set shiftwidth=4
 " 让 vim 把连续数量的空格视为一个制表符
-"set softtabstop=4
+set softtabstop=4
 set nu
 syntax enable
 syntax on
