@@ -39,8 +39,9 @@ call plug#end()
 "==================================
 "        key Settings             |
 "==================================
+command! -nargs=1 Ngrep vimgrep "<args>" $NOTES_DIR/**/*
 let mapleader = ";"
-nnoremap nw <C-W>v
+noremap nw <C-W>v
 nnoremap nt :tabnew<cr>
 nnoremap <C-j> <C-w>j
 nnoremap <C-h> <C-w>h
