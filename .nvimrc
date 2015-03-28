@@ -13,9 +13,9 @@ call plug#begin('~/.nvim/plugged')
 "-----Plugins Settings-------------
 Plug 'vim-scripts/TeX-9'
 let g:tex_nine_config = {
-			\'compiler': 'pdflatex',
-			\'viewer': {'app':'open', 'target':'pdf'},
-			\}
+ \'compiler': 'pdflatex',
+ \'viewer': {'app':'open', 'target':'pdf'},
+\}
 
 Plug 'ervandew/supertab'
 
@@ -28,6 +28,14 @@ Plug 'itchyny/calendar.vim'
 let g:calendar_google_calendar = 1
 let g:calendar_google_task = 1
 
+Plug 'nathanaelkane/vim-indent-guides'
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#262626 ctermbg=gray
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#3c3c3c ctermbg=darkgray
+let g:indent_guides_color_change_percent = 30
+let g:indent_guides_guide_size = 1
+
 Plug 'xolox/vim-notes'
 let g:notes_directories = ['~/Documents/Notes','~/Documents/Notes/Experiments']
 
@@ -39,7 +47,7 @@ call plug#end()
 "==================================
 "        key Settings             |
 "==================================
-command! -nargs=1 Ngrep vimgrep "<args>" $NOTES_DIR/**/*
+command! -nargs=1 Ns vimgrep "<args>" $NOTES_DIR/**/* | copen
 let mapleader = ";"
 noremap nw <C-W>v
 nnoremap nt :tabnew<cr>
@@ -60,14 +68,14 @@ set incsearch
 " vim 自身命令行模式智能补全
 set wildmenu
 set wildmode=longest:list,full
-" 将制表符扩展为空格
-set expandtab
 " 设置编辑时制表符占用空格数
 set tabstop=4
 " 设置格式化时制表符占用空格数
 set shiftwidth=4
+" 将制表符扩展为空格
+set expandtab
 " 让 vim 把连续数量的空格视为一个制表符
-set softtabstop=4
+"set softtabstop=4
 set nu
 syntax enable
 syntax on
