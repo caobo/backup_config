@@ -23,6 +23,8 @@ Plug 'Raimondi/delimitMate'
 
 Plug 'bling/vim-airline'
 let g:airline_theme='kalisi'
+let g:airline_powerline_fonts = 1
+set laststatus=1
 
 Plug 'itchyny/calendar.vim'
 let g:calendar_google_calendar = 1
@@ -30,9 +32,7 @@ let g:calendar_google_task = 1
 
 Plug 'nathanaelkane/vim-indent-guides'
 let g:indent_guides_enable_on_vim_startup = 1
-let g:indent_guides_auto_colors = 0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#262626 ctermbg=gray
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#3c3c3c ctermbg=darkgray
+let g:indent_guides_auto_colors = 1
 let g:indent_guides_color_change_percent = 30
 let g:indent_guides_guide_size = 1
 
@@ -40,6 +40,7 @@ Plug 'xolox/vim-notes'
 let g:notes_directories = ['~/Documents/Notes','~/Documents/Notes/Experiments']
 
 Plug 'xolox/vim-misc'
+
 
 "----------------------------------
 call plug#end()
@@ -101,10 +102,8 @@ set guioptions-=R
 " 禁止显示菜单和工具条
 set guioptions-=m
 set guioptions-=T
+set guifont=Monaco\ for\ Powerline\ Regular\ 16
 set cursorline
 colorscheme kalisi
-"let g:solarized_termcolors=256
-"let g:solarized_termtrans = 1
-"let g:solarized_degrade = 1
 "colorscheme solarized
 set background=dark
