@@ -12,6 +12,8 @@ call plug#begin('~/.nvim/plugged')
 
 "-----Plugins Settings-------------
 Plug 'vim-scripts/TeX-9'
+let g:tex_flavor='latex'
+let g:Tex_DefaultTargetFormat = 'pdf'
 let g:tex_nine_config = {
  \'compiler': 'pdflatex',
  \'viewer': {'app':'open', 'target':'pdf'},
@@ -36,11 +38,10 @@ let g:indent_guides_auto_colors = 1
 let g:indent_guides_color_change_percent = 30
 let g:indent_guides_guide_size = 1
 
-Plug 'xolox/vim-notes'
-let g:notes_directories = ['~/Documents/Notes','~/Documents/Notes/Experiments']
-
-Plug 'xolox/vim-misc'
-
+Plug 'Rykka/riv.vim'
+let note = { 'path': '~/Documents/Notes',}
+let g:riv_projects = [note]
+let g:riv_disable_folding = 1
 
 "----------------------------------
 call plug#end()
@@ -61,9 +62,7 @@ imap jk <esc>
 "==================================
 "        Functions                |
 "==================================
-let g:tex_flavor='latex'
 set grepprg=grep\ -nH\ $*
-let g:Tex_DefaultTargetFormat = 'pdf'
 " 开启实时搜索功能
 set incsearch
 " vim 自身命令行模式智能补全
@@ -75,14 +74,13 @@ set tabstop=4
 set shiftwidth=4
 " 将制表符扩展为空格
 set expandtab
-" 让 vim 把连续数量的空格视为一个制表符
-"set softtabstop=4
 set nu
 syntax enable
 syntax on
 set bsdir=buffer
 set autochdir
 set nobackup
+set noswapfile
 set showcmd
 set shortmess=atI
 set report=0
@@ -105,5 +103,5 @@ set guioptions-=T
 set guifont=Monaco\ for\ Powerline\ Regular\ 16
 set cursorline
 colorscheme kalisi
-"colorscheme solarized
 set background=dark
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
