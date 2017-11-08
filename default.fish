@@ -1,5 +1,5 @@
 # You can override some default options with config.fish:
-#
+# .local/share/omf/themes/default/fish_prompt.fish
 #  set -g theme_short_path yes
 
 function fish_prompt
