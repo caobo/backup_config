@@ -1,0 +1,7 @@
+fontSize   = 18
+encoding   = "UTF-8"
+saveOnBlur = true
+TM_PYTHON = /usr/local/bin/python3
+
+[ *.tex ]
+spellChecking = true
