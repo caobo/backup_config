@@ -1,4 +1,4 @@
-fontSize   = 18
+fontSize   = 16
 encoding   = "UTF-8"
 saveOnBlur = true
 TM_PYTHON = /usr/local/bin/python3
