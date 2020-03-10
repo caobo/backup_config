@@ -1,0 +1,64 @@
+{
+    // 
+    // Looks
+    // 
+    "workbench.colorTheme": "Solarized Light",
+    "workbench.preferredDarkColorTheme": "Chester Atom",
+    "editor.cursorBlinking": "phase",
+    // "workbench.activityBar.visible": false,
+    "editor.scrollbar.verticalScrollbarSize": 0,
+    "window.titleBarStyle": "native",
+    "customizeUI.titleBar": "inline",
+    "customizeUI.activityBar": "bottom",
+    "customizeUI.listRowHeight": 20,
+    "editor.renderLineHighlight": "all",
+    // "customizeUI.font.regular": "Helvetica Nueve",
+    "customizeUI.font.monospace": "FiraCode-Retina",
+    // 
+    // Font settings
+    // 
+    "editor.fontSize": 16,
+    "editor.fontFamily": "FiraCode-Retina",
+    // 
+    // Others
+    // 
+    "editor.formatOnPaste": true,
+    "editor.fontLigatures": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "editor.cursorStyle": "line",
+    "files.trimFinalNewlines": true,
+    "atomKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "html.format.indentHandlebars": true,
+    "latex-workshop.view.pdf.viewer": "tab",
+    // 
+    // spell right settings
+    // 
+    "spellright.language": ["en"],
+    "spellright.statusBarIndicator": true,
+    "spellright.documentTypes": [
+        "plaintext",
+        "markdown",
+        "latex"
+    ],
+    "spellright.spellContextByClass": {
+        "latex": "body",
+        "python": "comments",
+    },
+    // 
+    // Settings for latex files
+    // 
+    "[tex]": {
+        
+    },
+    "editor.occurrencesHighlight": false,
+    "editor.selectionHighlight": false,
+    "highlightSelections.borderStyle": "ridge",
+    "editor.wordWrap": "on",
+    "editor.rulers": [
+        80
+    ],
+    "highlightLine.borderStyle": "outset",
+    "highlightLine.borderWidth": "1px",
+    "editor.lineHeight": 27
+}
